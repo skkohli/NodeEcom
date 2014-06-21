@@ -1,0 +1,55 @@
+<%- include layouts/header.ejs %>
+
+        <div class="page-data">
+         <div class="data-btn">
+           <button onClick="addUser();">+ Add</button>
+         </div>
+         <div class="data-table">
+            <table border="1" cellpadding="7" cellspacing="7">
+                <tr>
+                    <th width="50px">No</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>CID</th>
+					<th>Cost Price</th>
+					<th>Selling Price</th>
+					<th>Discount</th>
+                    <th>Quantity</th>
+                    <th width="120px">Action</th>
+                </tr>
+                               
+                <% if(data.length){ 
+                                
+                 for(var i = 0;i < data.length;i++) { %>
+                 
+                <tr>
+                    <td><%=(i+1)%></td>
+                    <td><%=data[i].name%></td>
+                    <td><%=data[i].description%></td>
+                    <td><%=data[i].cid%></td>
+                    <td><%=data[i].cp%></td>
+                    <td><%=data[i].sp%></td>
+                    <td><%=data[i].discount%></td>
+					<td><%=data[i].quantity%></td>
+                    <td>
+                        <a class="a-inside edit" href="../products/edit/<%=data[i].id%>">Edit</a>
+                       
+                        <a class="a-inside delete" href="../products/delete/<%=data[i].id%>">Delete</a>
+                       
+                    </td>
+                </tr>
+            <% }
+            
+             }else{ %>
+                 <tr>
+                    <td colspan="3">No Product</td>
+                 </tr>
+            <% } %>
+                
+                              
+                
+            </table>
+         </div>
+        </div>
+        
+<%- include layouts/footer.ejs %>

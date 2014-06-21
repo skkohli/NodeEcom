@@ -1,0 +1,118 @@
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+    #top_div{
+    /*border:2px solid blue;*/
+    width:70%;
+    max-width: 760px;
+    height:auto;
+    
+  
+    position:relative;
+    
+    }
+    
+    #big_wrap{
+    /*border:2px solid green;*/
+    width:100%;
+
+    display:inline-block;
+    
+    position:relative;
+
+    height:auto;
+    margin-right:-10px;
+    }
+
+    
+
+    header#product_desc{
+    /*border:2px solid yellow;*/
+    
+    width:100.4%;
+    display:inline-block;
+    padding:1px 1px;
+    background:#92C7C7;
+    color:white;
+    text-indent:10px;
+    text-align:center;
+
+    
+}
+.product2{
+    margin-left:auto;
+    
+    display:-webkit-box;
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;  
+    flex-direction:row;
+    width:auto;
+    height:220px;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+   
+
+    
+}
+
+
+
+    
+.mobile{
+    
+    padding:10px;
+    margin:10px;
+    margin-left:-10px;
+    width:135px;
+    text-align: center;
+
+}
+ .mobile img{
+    
+    width:80%;
+    height:105px;
+    display:block;
+    margin:auto;
+}
+.choco{
+    
+    padding:10px;
+    margin:10px;
+    margin-left:-10px;
+    width:135px;
+    text-align: center;
+
+}
+.choco img{
+    
+    width:80%;
+    height:110px;
+    display:block;
+    margin:auto;
+}
+
+#simplemodal-container {
+   width:200px;
+   
+   
+   height:200px;
+   
+   top:50%;
+   margin-bottom:-100px;
+   left:50%;
+   margin-left:-100px;
+   right:50%;
+   
+   margin-right:-230px;
+   
+
+      
+      background-color:#fff; 
+      border:1px solid grey;
+     -moz-border-radius: 8px; 
+ }
+
+
+
+}

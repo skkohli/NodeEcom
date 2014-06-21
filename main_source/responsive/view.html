@@ -1,0 +1,98 @@
+	<!doctype html>
+<html lang="en">
+	<head>
+	<title>E-Commerce</title>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<!-- for cart -->
+
+<link rel="stylesheet" type="text/css" href="cart/samples/lib/dc.core.1.1.0.min.css" />    
+    <link rel="stylesheet" type="text/css" href="cart/samples/lib/dc.cart.css" />
+    
+    <!-- CSS for this example only-->
+    <link rel="stylesheet" type="text/css" href="cart/samples/common/sample.common.css" />
+    <link rel="stylesheet" type="text/css" href="cart/samples/common/sample.product.css" />
+    <link rel="stylesheet" type="text/css" href="cart/samples/common/prettify.css" />
+    <!-- for cart -->
+		
+
+
+	</head>
+	<body>
+		
+
+
+		<div class="product_list">
+        <div class="product_list_header"><div class="sub"></div><div id="cart">Cart</div></div>
+        <div id="product_list" class="product_list_content">
+            <div class="product">
+                <div class="thumbnail"><img height="200" width="200" src="image/grand.jpg"/></div>
+                <div class="caption"><div class="text"><div class="main">MacBook</div><div class="sub">(shipping $20)</div></div><div class="button" id="macbook">buy $999</div></div>
+            </div>
+            </div>
+            
+			
+		
+		 
+
+		<!-- script for cart-->
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
+		
+		<!-- for cart -->
+
+
+    <!-- for cart -->
+
+		<script src="cart/samples/lib/dc.core.1.1.0.min.js" type="text/javascript"></script>  
+    <script src="cart/samples/lib/dc.cart.free.min.js" type="text/javascript"></script>      
+    <script src="cart/samples/lib/dc.cart.lang.js" type="text/javascript"></script>
+    
+    <!-- CSS for this example only-->
+    <script src="cart/samples/common/prettify.js" type="text/javascript"></script>    
+        
+    <script type="text/javascript">
+        $(function(){            
+
+            // Create a new AJAXPaypalCart Object
+            var cart = $('#cart').DCAJAXPaypalCart({
+                width:600,
+                autoOpenWhenAdd:false,
+                openNewCheckOutWindow:true,
+                //themeColor:'#333',
+                //themeDarkColor:'#FFF',
+                
+                footer:'We accpet paypal, visa and master card. (This is a customizable footer)',
+                paypalOptions:{
+                    business:'tsangwl@digicrafts.com.hk',
+                   
+                }
+            });            
+            
+            // Add the button
+            cart.addBuyButton("#macbook",{
+                name:'MacBook',                     // Item name appear on the cart
+                thumbnail:'image/grand.jpg',      // Thumbnail path of the item (Optional)
+                price:'999',                        // Cost of the item
+                shipping:20                         // Shipping cost for the item (Optional)
+            });
+
+            
+           
+           
+             
+            
+            // For code highlight
+            prettyPrint();
+            
+        });
+    </script>
+		
+	
+		
+		
+	</body>
+</html>

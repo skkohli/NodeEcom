@@ -1,0 +1,54 @@
+
+.mobile{
+	
+	padding:10px;
+	margin:10px;
+	width:135px;
+	text-align: center;
+
+}
+ .mobile img{
+	
+	width:55px;
+	height:105px;
+	display:block;
+	margin:auto;
+}
+.mobile:hover{
+	border:3px solid yellow;
+	background:#FFF5EE;
+}
+.product2{
+	margin-left:auto;
+	
+	display:-webkit-box;
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;  
+	-webkit-box-orient:horizontal;
+	width:auto;
+	height:210px;
+	-webkit-box-pack:center;
+	-webkit-box-align:stretch;
+}
+
+.choco{
+	
+	padding:10px;
+	margin:10px;
+	width:135px;
+	text-align: center;
+
+}
+.choco img{
+	
+	width:60px;
+	height:110px;
+	display:block;
+	margin:auto;
+}
+.choco:hover{
+	border:3px solid yellow;
+	background:#FFF5EE;
+}

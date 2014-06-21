@@ -1,0 +1,241 @@
+body{
+	margin:0px;
+	padding:0px;
+	background:#FEFCFF;
+	}
+
+#top_div{
+	/*border:2px solid blue;*/
+	width: 1000px;
+	height:auto;
+	margin: 3px auto;
+	}
+
+#cartupdate{
+	border:1px solid grey;
+	-webkit-border-radius: 50% ;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+	width:20px;
+	height:20px;
+	/*text-align:right;*/
+	
+	
+}
+#big_wrap{
+	/*border:2px solid green;*/
+	width: 1000px;
+	height:auto;
+	margin: 3px auto;
+	}
+
+header{
+
+ display:block;
+ padding:15px;
+ background-color:#0a3151;
+ 
+	}
+header#top_head{
+	/*border:2px solid red;*/
+	display:block;
+	padding:15px;
+	
+	background-color:white;
+}
+	
+header#product_desc{
+	/*border:2px solid yellow;*/
+	padding:1px 1px;
+	background:#92C7C7;
+	color:white;
+	text-indent:10px;
+	
+}
+
+hr.top_hr { 
+	display: block; 
+    border: 0; 
+	border-top: 1px solid white;
+    margin: 1em 0; 
+	padding: 0; 
+	}
+ul{
+ margin: 0;
+ padding: 0;
+	}
+
+nav ul.doNothings{
+ text-align: right;
+	}
+nav ul.doNothings li {
+ display: inline-block;
+ /*border-right:1px solid blue;*/
+	}
+nav ul.doNothings li a{
+ color: #fff;
+ display: inline-block;
+ padding: 1px 1px;
+ background-color: white;
+ 
+ text-decoration: none;
+	}
+nav ul.doNothings li a:hover{
+ background-color: #d2d2d2;
+	}
+
+	.viewsection1{
+		margin: 10px 8px;
+	/*border:2px solid brown;*/
+	width:auto;
+	height:210px;
+	display:-webkit-box;
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;  
+	-webkit-box-orient:horizontal;
+	
+	-webkit-box-pack:center;
+	-webkit-box-align:stretch;
+
+	}
+
+
+
+
+nav ul.doNothing{
+ text-align: center;
+	}
+nav ul.doNothing li {
+ display: inline-block;
+	}
+nav ul.doNothing li a{
+ color: #fff;
+ display: inline-block;
+ padding: 8px 32px;
+ background-color: #0a3151;
+ 
+ text-decoration: none;
+	}
+nav ul.doNothing li a:hover{
+ background-color: #307D7E;
+	}
+
+.viewsection{
+	margin: 10px 8px;
+	/*border:2px solid brown;*/
+	width:auto;
+	height:auto;
+	}
+
+/*.product_img{
+	clear:both;
+	margin:3px 3px;
+	
+	border:1px solid blue;
+	width:400px;
+	}
+	*/
+#image_desc{
+	float:left;
+	/*border:3px solid black;*/
+}
+#image_desc:hover{
+	border:3px solid white;
+	background:#FFF5EE;
+	cursor:pointer;
+}
+.product_info{
+	width:900px;	
+	margin-left:10px;
+	padding:10px;
+	/*border:2px solid yellow;*/
+	}
+	
+#pay{
+	width:900px;
+	margin-left:10px;
+	padding:10px;
+	text-align:right;
+	/*border:1px solid blue;*/
+}
+#product_feature ul{
+	
+	text-align:centre;
+	list-style: square inside none;
+	padding:2px;
+}
+
+#searchdiv {
+ color: #fff;
+ display: inline-block;
+ padding: 3px 30px;
+ background-color: #0a3151;
+
+ text-decoration: none;
+	}
+
+#search input[type="text"] {
+    background: url("../image/search_dark.png") no-repeat 10px 6px #fcfcfc;
+    border: 1px solid #d1d1d1;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: black;
+    width: 150px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+
+#search input[type="text"]:focus {
+    width: 175px;
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    }
+
+
+#the_footer p{
+	padding: 20px 20px;
+	float:left;
+		
+	}
+#the_footer p a{
+	text-decoration:none;
+	}
+#aboutus{
+	-webkit-columns: 3;
+	-moz-column: 3;
+	columns: 3;
+	
+	-webkit-column-gap: 50px;
+	-moz-column-gap: 50px;
+	column-gap: 50px;
+	}
+#paypal{
+	float:right;
+	padding:15px 15px;
+	}
+	
+@media screen and (max-width: 48em) {
+	nav ul.doNothing li {
+	 width: 50%;
+	 float: left;
+		}
+	nav ul.doNothing li a {
+	 width: 100%;
+	 padding: 1em 0;
+		}
+	#unimportant{
+	 display: none;
+		}
+	}	
